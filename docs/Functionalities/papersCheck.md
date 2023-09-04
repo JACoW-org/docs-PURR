@@ -1,11 +1,11 @@
 ![Papers Check](pictures/pdf-card.png)
 
-## Validate functionality
+## Validate Functionality
 
-By clicking on the "Validate" button, the plugin is starting a task in MEOW that is performing a set of checks on the papers' PDF files. The result of the task is being displayed in a modal that lists the PDF files that need to be checked, or none if no error occurs.
+By clicking on the "Validate" button, the plugin starts a task in MEOW that performs a set of checks on the papers' PDF files. The result of the task is displayed in a modal that lists the PDF files that need to be checked, or none if no errors occur.
 
 ## Settings
 
 ![Papers Check](pictures/pdf-settings.png)
 
-The Papers Check settings are about the size of the papers' pages. 
+The Papers Check settings pertain to the size of the papers' pages.
