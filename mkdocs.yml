@@ -10,8 +10,3 @@ nav:
     - Abstract Booklet generation: Functionalities/abstractBooklet.md
     - Papers Check: Functionalities/papersCheck.md
     - Final Proceedings generation: Functionalities/finalProceedings.md
-  - General instructions:
-    - How to login to the Indico event: General/JACoWlogin.md
-    - How to submit an abstract: General/submission.md
-    - How to edit your abstracts: General/editing.md
-    - How to edit your contributions: General/contributions.md
