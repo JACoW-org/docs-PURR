@@ -1,6 +1,6 @@
 # 
 
-<!-- ![JACoW logo](https://www.jacow.org/pub/images/header.png) -->
+![JACoW logo](img/JACoW.png)
 
 This site hosts the documentation on how to use the PURR plugin.
 
