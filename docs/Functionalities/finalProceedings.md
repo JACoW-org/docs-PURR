@@ -12,12 +12,21 @@ Both the 'Pre-Press' and 'Final Proceedings' buttons are related to the generati
 
 In fact, 'Pre-Press' involves:
 
-- including contributions that haven't been fully accepted
-- excluding contributions' slides, if any
-- performing a non-strict PDF check
-- skipping the generation of DOI payloads
-- pointing to the contributions' DOI pages internally
-- having relative links to PDF files
+- Including contributions that have been accepted (green state) but have not undergone QA.
+- Excluding contribution slides, if any.
+- Performing a PDF check that will log warnings without halting the task execution.
+- Skipping the generation of DOI payloads.
+- The link to each contribution's DOI page is internal and not on [DOI.org](https://doi.org).
+- The link to each PDF paper in the contribution details and in the at-a-glance proceedings volume is relative (internal with respect to the generated site).
+
+On the other hand, 'Final Proceedings' involves:
+
+- Including ONLY contributions that have been accepted (green state) and have undergone QA.
+- Including contribution slides when available.
+- Performing a PDF check that will log errors on the panel without halting the task execution.
+- Generating JSON payloads for each contribution's DOI.
+- The link to each contribution's DOI page is on [DOI.org](https://doi.org).
+- The link to each PDF paper in the contribution details and in the at-a-glance proceedings volume is absolute.
 
 The main goal of 'Pre-Press' is to perform a quicker run, while 'Final Proceedings' is intended for the generation of the proceedings to be published.
 
@@ -73,27 +82,43 @@ Settings for final proceedings are organized into several subsections.
 
 ### General
 
-![Final proceedings settings: General section](pictures/settings-general.png)
+![Final proceedings settings: General section](pictures/settings-general.png)on about the conference, such as location, dates, long and short book titles, series, and series numbers. It also includes the "pre-print" label.
 
-This section includes general information about the conference, such as location, dates, long and short book titles, series, and series numbers. It also includes the "pre-print" label.
+This section comprises the following fields:
+
+- **Location**: For example, "Venice," serves as a label indicating where the conference took place. This string is utilized as a field when constructing a contribution's DOI and references.
+
+- **Date**: For instance, "07-12 May 2023," acts as a label specifying the dates when the conference occurred. This information is prominently displayed on the site's homepage to convey the conference schedule.
+
+- **Booktitle short**: An abbreviated label like "IPAC'23" is used in the header of website pages and within metadata for references and DOIs.
+
+- **Booktitle long**: A longer label such as "14th International Particle Conference" is employed on the homepage and in metadata for references and DOIs to provide a more descriptive title.
+
+- **Series**: This field, for instance, "IPAC'23 - 14 International Particle Accelerator Conference," is utilized within metadata for references and DOIs to denote the conference series.
+
+- **Series number**: For example, "14," indicates the conference's position in the series.
+
+- **Preprint**: This label is affixed to papers of contributions accepted through the "peer review" module of Indico.
 
 ### Extra
 
 ![Final proceedings settings: Extra section](pictures/settings-extra.png)
 
-This section includes the following settings:
+This section encompasses the following configuration options:
 
-- **Primary color**: Defines the theme of the website.
+- **Primary color**: This option allows you to define the website's theme color.
 
-- **Host info**: Text added to the homepage, under the volumes section (as highlighted in the picture below). Markdown can be used to customize the appearance of the text.
+- **Host info**: Text added to the homepage, under the volumes section (as highlighted in the picture below). Markdown can be utilized to customize the text's appearance.
 
 ![Final proceedings settings: Host info result](pictures/settings-host-info.png)
 
-- **Editorial Board**: Rendered in the page footer. Markdown can be used to customize the appearance.
+- **Editorial Board**: This section appears in the page footer, and Markdown can be employed to customize its appearance.
 
-- **Editorial JSON**: Defines the list of editors that worked on the conference. It is a JSON array of objects: `{first_name; last_name; affiliation}`.
+- **Editorial JSON**: This setting defines the list of editors who contributed to the conference. It is represented as a JSON array of objects in the format: `{first_name, last_name, affiliation}`. This information is used to populate the "editors" field in the DOI metadata.
 
-- **duplicate_of alias** and **CAT_publish alias**: Used to define aliases of duplicate_of and CAT_publish if needed.
+- **Duplicate_of alias**: This option allows you to specify an alias for the `duplicate_of` field. `duplicate_of` is a custom field in Indico that can be used to indicate that one contribution has a "parent" contribution, sharing information such as references and DOIs with it.
+
+- **CAT_publish alias**: This option allows you to define an alias for the `CAT_publish` field. `CAT_publish` is a custom field in Indico that can be used to control whether a contribution can be published or not, based on the value of this field (e.g., true or false).
 
 ### Identifiers
 

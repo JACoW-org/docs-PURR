@@ -23,8 +23,8 @@ Specific placeholders must be used, such as:
 
 - {code} for the Session/Contribution code
 - {title} for the Session/Contribution title
-- {start} for the Session/Contribution start date
-- {end} for the Session/Contribution end date
+- {start} for the Session/Contribution start datetime
+- {end} for the Session/Contribution end datetime
 - | (pipe) for table columns, as the contribution header is formatted as a table
 
 ### Custom Fields
