@@ -155,3 +155,5 @@ The materials are sourced from the conference's content in Indico. To add a mate
 ![Final proceedings settings: Table of Contents section](pictures/settings-toc.png)
 
 This section covers the table of contents in the proceedings volume. You can include both sessions and contributions, or choose to include only one of them. It is recommended to include only sessions for conferences with a large number of contributions. This helps to keep the table of contents concise.
+
+![Final proceedings settings: Showcase of some of the settings in the homepage](pictures/home-with-graphics.png)
