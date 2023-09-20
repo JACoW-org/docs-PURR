@@ -2,11 +2,11 @@
 
 ![JACoW logo](img/JACoW.png)
 
-This site hosts the documentation on how to use the PURR plugin.
+This site hosts the documentation on how to use the [PURR](https://github.com/JACoW-org/PURR) plugin.
 
-PURR is a plugin that is installed on JACoW's Indico. It stands for "Proceedings Utility Running Remotely" and it includes all the fuctionalities that are needed to create a conference's final proceedings.
+PURR is a plugin that is installed on JACoW's [Indico](https://getindico.io). It stands for "Proceedings Utility Running Remotely" and it includes all the functionalities that are needed to create a conference's final proceedings.
 
-PURR works together with MEOW [inserisci link MEOW], which is located on a remote server. It is perfectly integrated in JACoW's ecosytem, as it uses the same entities and glossary.
+PURR works together with [MEOW](https://meow-docs.jacow.org/), which is located on a remote server. It is perfectly integrated in JACoW's ecosystem, as it uses the same entities and glossary.
 
 When successfully connected with MEOW, there are four main functionalities exploited by PURR:
 
@@ -25,8 +25,6 @@ Main authors:
 - Fabio Meneghetti
 
 - Christian Obetti
-
-## Resources
 
 <!-- The workflow follows the one well documented in the [Organizing IPACs (and other JACoW Events)](https://www.jacow.org/Editors/RunningJACoWConference)  hosted on the official [Joint Accelerator Conferences Website (JACoW)](https://www.JACoW.org).
 

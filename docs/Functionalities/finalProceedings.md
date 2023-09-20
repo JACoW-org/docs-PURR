@@ -39,7 +39,6 @@ On the right, there are logs containing informative messages on the current run.
 At the bottom, a progress bar shows the progress status.
 If the run is successful, the panel will appear as shown in the following picture:
 
-
 ![Final Proceedings Success](pictures/fp-run-success.png)
 
 If any blocking error occurs during the run, a message is displayed to the user, as shown in the following example:
@@ -86,7 +85,7 @@ Settings for final proceedings are organized into several subsections.
 
 This section comprises the following fields:
 
-- **Location**: For example, "Venice," serves as a label indicating where the conference took place. This string is utilized as a field when constructing a contribution's DOI and references.
+- **Location**: For example, "Venice," serves as a label indicating where the conference took place. This string is utilised as a field when constructing a contribution's DOI and references.
 
 - **Date**: For instance, "07-12 May 2023," acts as a label specifying the dates when the conference occurred. This information is prominently displayed on the site's homepage to convey the conference schedule.
 
@@ -94,11 +93,12 @@ This section comprises the following fields:
 
 - **Booktitle long**: A longer label such as "14th International Particle Conference" is employed on the homepage and in metadata for references and DOIs to provide a more descriptive title.
 
-- **Series**: This field, for instance, "IPAC'23 - 14 International Particle Accelerator Conference," is utilized within metadata for references and DOIs to denote the conference series.
+- **Series**: This field, for instance, "IPAC'23 - 14 International Particle Accelerator Conference," is utilised within metadata for references and DOIs to denote the conference series.
 
 - **Series number**: For example, "14," indicates the conference's position in the series.
 
-- **Preprint**: This label is affixed to papers of contributions accepted through the "peer review" module of Indico.
+- **Preprint**: This label is affixed to the PDF of any contribution accepted through the "peer review" module of Indico. Example of such an overprint follows:
+  ![](pictures/preprint.png)
 
 ### Extra
 
@@ -108,17 +108,33 @@ This section encompasses the following configuration options:
 
 - **Primary color**: This option allows you to define the website's theme color.
 
-- **Host info**: Text added to the homepage, under the volumes section (as highlighted in the picture below). Markdown can be utilized to customize the text's appearance.
+- **Host info**: Text added to the homepage, under the volumes section (as highlighted in the picture below). Markdown can be utilised to customise the text's appearance.
 
 ![Final proceedings settings: Host info result](pictures/settings-host-info.png)
 
-- **Editorial Board**: This section appears in the page footer, and Markdown can be employed to customize its appearance.
+- **Editorial Board**: This section appears in the page footer and in all paper detail pages referenced by doi.org. While Markdown can be employed to customise its appearance, we are discouraging its use since it won't be interpreted in the paper detail pages.
 
-- **Editorial JSON**: This setting defines the list of editors who contributed to the conference. It is represented as a JSON array of objects in the format: `{first_name, last_name, affiliation}`. This information is used to populate the "editors" field in the DOI metadata.
+- **Editorial JSON**: This setting defines the list of editors who contributed to the conference. It is represented as a JSON array of objects in the format: `{first_name, last_name, affiliation}`. This information is used to populate the "editors" field in the DOI metadata. E.g.:
+  
+  ```
+  [
+    {
+      "first_name": "OC",
+      "last_name": "Chair",
+      "affiliation": "JACoW"
+    },
+    {
+      "first_name": "SPC",
+      "last_name": "Chair",
+      "affiliation": "JACoW"
+    }
+  ]
+  ```
 
-- **Duplicate_of alias**: This option allows you to specify an alias for the `duplicate_of` field. `duplicate_of` is a custom field in Indico that can be used to indicate that one contribution has a "parent" contribution, sharing information such as references and DOIs with it.
+- **Duplicate_of alias**: This option allows you to specify the actual name of the `duplicate_of` field. `duplicate_of` is a custom field in Indico that can be used to indicate that one contribution has a "parent" contribution, sharing information such as references and DOIs with it. Here follows an example where contribution `SUPM014` has a custom field `duplicate_of` equal to `THPL082`:
+  ![](pictures/duplicate_of.png)
 
-- **CAT_publish alias**: This option allows you to define an alias for the `CAT_publish` field. `CAT_publish` is a custom field in Indico that can be used to control whether a contribution can be published or not, based on the value of this field (e.g., true or false).
+- **CAT_publish alias**: This option allows you to specify the actual name of the `CAT_publish` field. `CAT_publish` is a custom field in Indico that can be used to control whether a contribution can be published or not, based on the value of this field (if `false` that contribution won't appear in the proceedings).
 
 ### Identifiers
 
@@ -144,9 +160,9 @@ Finally, **DOI User** and **DOI Password** are the credentials to access datacit
 
 ![Final proceedings settings: Materials section](pictures/settings-materials.png)
 
-This section manages various assets related to the proceedings, such as logos, posters, covers of the at-a-glance volume, covers of the final proceedings volume, other volumes, and custom attachments. It is organized as a grouped table. For *volumes* and *attachments*, you can sort the files to have them listed in the desired order on the proceedings website.
+This section manages various assets related to the proceedings, such as logos, posters, covers of the at-a-glance volume, covers of the final proceedings volume, other volumes, and custom attachments. It is organised as a grouped table. For *volumes* and *attachments*, you can sort the files to have them listed in the desired order on the proceedings website.
 
-The materials are sourced from the conference's content in Indico. To add a material to the proceedings, simply click on the 'Add' button. This will open a new modal where you can select the desired material and section, as illustrated in the following image.
+The files are sourced from the event's materials in Indico. To add a material to the proceedings, simply click on the 'Add' button. This will open a new modal where you can select the desired material and section, as illustrated in the following image.
 
 ![Final proceedings settings: Add material](pictures/settings-materials-add.png)
 
@@ -155,3 +171,7 @@ The materials are sourced from the conference's content in Indico. To add a mate
 ![Final proceedings settings: Table of Contents section](pictures/settings-toc.png)
 
 This section covers the table of contents in the proceedings volume. You can include both sessions and contributions, or choose to include only one of them. It is recommended to include only sessions for conferences with a large number of contributions. This helps to keep the table of contents concise.
+
+Example of a Table of Contents created with both Sessions and Contributions:
+
+![](pictures/toc.png)
