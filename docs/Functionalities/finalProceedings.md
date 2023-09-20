@@ -172,7 +172,7 @@ The files are sourced from the event's materials in Indico. To add a material to
 
 This section covers the table of contents in the proceedings volume. You can include both sessions and contributions, or choose to include only one of them. It is recommended to include only sessions for conferences with a large number of contributions. This helps to keep the table of contents concise.
 
+![](pictures/toc.png)
+
 ![Final proceedings settings: Showcase of some of the settings in the homepage](pictures/home-with-graphics.png)
 Example of a Table of Contents created with both Sessions and Contributions:
-
-![](pictures/toc.png)
