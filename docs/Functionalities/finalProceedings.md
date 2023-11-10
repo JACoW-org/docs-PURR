@@ -131,10 +131,10 @@ This section encompasses the following configuration options:
   ]
   ```
 
-- **Duplicate_of alias**: This option allows you to specify the actual name of the `duplicate_of` field. `duplicate_of` is a custom field in Indico that can be used to indicate that one contribution has a "parent" contribution, sharing information such as references and DOIs with it. Here follows an example where contribution `SUPM014` has a custom field `duplicate_of` equal to `THPL082`:
+- **Custom field for contribution duplicates**: This option allows you to specify the actual name of the `CAT_duplicate_of` field. `CAT_duplicate_of` is a custom field in Indico that can be used to indicate that one contribution has a "parent" contribution, sharing information such as references and DOIs with it. Here follows an example where contribution `SUPM014` has a custom field `CAT_duplicate_of` equal to `THPL082`:
   ![](pictures/duplicate_of.png)
 
-- **CAT_publish alias**: This option allows you to specify the actual name of the `CAT_publish` field. `CAT_publish` is a custom field in Indico that can be used to control whether a contribution can be published or not, based on the value of this field (if `false` that contribution won't appear in the proceedings).
+- **Custom field for contributions not to publish**: This option allows you to specify the actual name of the `CAT_publish` field. `CAT_publish` is a custom field in Indico that can be used to control whether a contribution can be published or not, based on the value of this field (if `false` that contribution won't appear in the proceedings). It is sufficient to be set as a boolean custom field with only the "False" value.
 
 ### Identifiers
 
