@@ -166,6 +166,16 @@ The files are sourced from the event's materials in Indico. To add a material to
 
 ![Final proceedings settings: Add material](pictures/settings-materials-add.png)
 
+---
+
+**Important note**: the files that can go into the proceedings are set via the above window in PURR's settings. However, they must be uploaded beforehand as conference materials in Indico (*Organisation > Materials* menu entry in management interface). To let these files be reachable by PURR, be sure that you create a folder called `final_proceedings`. This folder can (and should) be protected and hidden from the general public.
+
+![](pictures/settings-materials-indico.png)
+
+![](pictures/settings-materials-indico-details.png)
+
+
+
 ### Table of Contents
 
 ![Final proceedings settings: Table of Contents section](pictures/settings-toc.png)
