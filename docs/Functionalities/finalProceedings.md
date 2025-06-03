@@ -175,7 +175,7 @@ The files are sourced from the event's materials in Indico. To add a material to
 ![](pictures/settings-materials-indico-details.png)
 
 !!! warning "File types"
-    Please note that only the `Logo` attachment can be an image (preferrably in `PNG` format). All other files **must be PDF**.
+    Please note that the `Logo` and the `Poster` attachment must be images (preferrably in `PNG` format). All other files **must be PDF**.
 
 ### Table of Contents
 
