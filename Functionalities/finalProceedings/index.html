@@ -1,0 +1,985 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../papersCheck/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Final Proceedings generation - JACoW - CAT - PURR</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/open_in_new_tab.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#site-functionality" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="JACoW - CAT - PURR" class="md-header__button md-logo" aria-label="JACoW - CAT - PURR" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            JACoW - CAT - PURR
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Final Proceedings generation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/JACoW-org/docs-PURR" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jacow-org/docs-PURR
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="JACoW - CAT - PURR" class="md-nav__button md-logo" aria-label="JACoW - CAT - PURR" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    JACoW - CAT - PURR
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/JACoW-org/docs-PURR" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jacow-org/docs-PURR
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Functionalities
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Functionalities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connection to MEOW
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../statusAndSettings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status and Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abstractBooklet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abstract Booklet generation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../papersCheck/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Papers Check
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Final Proceedings generation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Final Proceedings generation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#site-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Site functionality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Site functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-press-and-final-proceedings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Press and Final Proceedings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compress
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doi-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      DOI Functionality
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      General
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#doi" class="md-nav__link">
+    <span class="md-ellipsis">
+      DOI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Materials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-example-of-settings-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual example of settings' result
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#site-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Site functionality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Site functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-press-and-final-proceedings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Press and Final Proceedings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compress
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doi-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      DOI Functionality
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      General
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#doi" class="md-nav__link">
+    <span class="md-ellipsis">
+      DOI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Materials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-example-of-settings-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual example of settings' result
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Final Proceedings generation</h1>
+
+<p><img alt="Final Proceedings" src="../pictures/fp-card.png" /></p>
+<h2 id="site-functionality">Site functionality</h2>
+<p>By clicking on the "Site" button, a Modal with more functionalities is opened.</p>
+<p><img alt="Final Proceedings Panel" src="../pictures/fp-panel.png" /></p>
+<h3 id="pre-press-and-final-proceedings">Pre-Press and Final Proceedings</h3>
+<p>Both the 'Pre-Press' and 'Final Proceedings' buttons are related to the generation of the conference's proceedings, with some slight differences.</p>
+<p>In fact, 'Pre-Press' involves:</p>
+<ul>
+<li>Including contributions that have been accepted (green state) but have not undergone QA.</li>
+<li>Excluding contribution slides, if any.</li>
+<li>Performing a PDF check that will log warnings without halting the task execution.</li>
+<li>Skipping the generation of DOI payloads.</li>
+<li>The link to each contribution's DOI page is internal and not on <a href="https://doi.org">DOI.org</a>.</li>
+<li>The link to each PDF paper in the contribution details and in the at-a-glance proceedings volume is relative (internal with respect to the generated site).</li>
+</ul>
+<p>On the other hand, 'Final Proceedings' involves:</p>
+<ul>
+<li>Including ONLY contributions that have been accepted (green state) and have undergone QA.</li>
+<li>Including contribution slides when available.</li>
+<li>Performing a PDF check that will log errors on the panel without halting the task execution.</li>
+<li>Generating JSON payloads for each contribution's DOI.</li>
+<li>The link to each contribution's DOI page is on <a href="https://doi.org">DOI.org</a>.</li>
+<li>The link to each PDF paper in the contribution details and in the at-a-glance proceedings volume is absolute.</li>
+</ul>
+<p>The main goal of 'Pre-Press' is to perform a quicker run, while 'Final Proceedings' is intended for the generation of the proceedings to be published.</p>
+<p>Below is an example of a run.</p>
+<p><img alt="Final Proceedings Run" src="../pictures/fp-run.png" /></p>
+<p>All the tasks are listed on the left, highlighting those completed, running, and scheduled.
+On the right, there are logs containing informative messages on the current run.
+At the bottom, a progress bar shows the progress status.
+If the run is successful, the panel will appear as shown in the following picture:</p>
+<p><img alt="Final Proceedings Success" src="../pictures/fp-run-success.png" /></p>
+<p>If any blocking error occurs during the run, a message is displayed to the user, as shown in the following example:</p>
+<p><img alt="Final Proceedings Error" src="../pictures/fp-run-error.png" /></p>
+<h3 id="compress">Compress</h3>
+<p>The "Compress" button is enabled only if any proceedings generation run has been completed successfully. This task compresses the generated proceeding folder to make them available for download.</p>
+<h3 id="download">Download</h3>
+<p>The "Download" button is enabled only once the compressed proceedings are available. This functionality initiates the download in the web browser.</p>
+<h3 id="open">Open</h3>
+<p>The "Open" button is enabled only if any proceedings generation run has been completed successfully. By clicking on it, a preview of the proceedings website is opened.</p>
+<h2 id="doi-functionality">DOI Functionality</h2>
+<p>The "DOI" button is enabled only if the DOI payload files have been generated previously. At the start, a task that fetches the status of the contributions' DOIs is launched automatically in MEOW.</p>
+<p><img alt="DOI open" src="../pictures/doi-open.png" /></p>
+<p>As a result, the status of every DOI is listed:</p>
+<p><img alt="DOI successfull fetch" src="../pictures/doi-fetch.png" /></p>
+<p>Following is the list of available actions:</p>
+<ul>
+<li><strong>Refresh</strong>: fetches the status of the DOIs again.</li>
+<li><strong>Create</strong>: updates the status of the DOIs to "draft" (this action doesn't work if DOIs have already been published or registered).</li>
+<li><strong>Delete</strong>: deletes the DOIs from the datacite repository (this action doesn't work if DOIs have already been published or registered).</li>
+<li><strong>Publish</strong>: updates the status of the DOIs to "findable."</li>
+<li><strong>Hide</strong>: updates the status of the DOIs to "hidden" (this action changes the DOIs to "registered" if they have already been published once).</li>
+</ul>
+<h2 id="settings">Settings</h2>
+<p>Settings for final proceedings are organized into several subsections.</p>
+<h3 id="general">General</h3>
+<p><img alt="Final proceedings settings: General section" src="../pictures/settings-general.png" />on about the conference, such as location, dates, long and short book titles, series, and series numbers. It also includes the "pre-print" label.</p>
+<p>This section comprises the following fields:</p>
+<ul>
+<li>
+<p><strong>Location</strong>: For example, "Venice," serves as a label indicating where the conference took place. This string is utilised as a field when constructing a contribution's DOI and references.</p>
+</li>
+<li>
+<p><strong>Date</strong>: For instance, "07-12 May 2023," acts as a label specifying the dates when the conference occurred. This information is prominently displayed on the site's homepage to convey the conference schedule.</p>
+</li>
+<li>
+<p><strong>Booktitle short</strong>: An abbreviated label like "IPAC'23" is used in the header of website pages and within metadata for references and DOIs.</p>
+</li>
+<li>
+<p><strong>Booktitle long</strong>: A longer label such as "14th International Particle Conference" is employed on the homepage and in metadata for references and DOIs to provide a more descriptive title.</p>
+</li>
+<li>
+<p><strong>Series</strong>: This field, for instance, "IPAC'23 - 14 International Particle Accelerator Conference," is utilised within metadata for references and DOIs to denote the conference series.</p>
+</li>
+<li>
+<p><strong>Series number</strong>: For example, "14," indicates the conference's position in the series.</p>
+</li>
+<li>
+<p><strong>Preprint</strong>: This label is affixed to the PDF of any contribution accepted through the "peer review" module of Indico. Example of such an overprint follows:
+  <img alt="" src="../pictures/preprint.png" /></p>
+</li>
+</ul>
+<h3 id="extra">Extra</h3>
+<p><img alt="Final proceedings settings: Extra section" src="../pictures/settings-extra.png" /></p>
+<p>This section encompasses the following configuration options:</p>
+<ul>
+<li>
+<p><strong>Primary color</strong>: This option allows you to define the website's theme color.</p>
+</li>
+<li>
+<p><strong>Host info</strong>: Text added to the homepage, under the volumes section (as highlighted in the picture below). Markdown can be utilised to customise the text's appearance.</p>
+</li>
+</ul>
+<p><img alt="Final proceedings settings: Host info result" src="../pictures/settings-host-info.png" /></p>
+<ul>
+<li>
+<p><strong>Editorial Board</strong>: This section appears in the page footer and in all paper detail pages referenced by doi.org. While Markdown can be employed to customise its appearance, we are discouraging its use since it won't be interpreted in the paper detail pages.</p>
+</li>
+<li>
+<p><strong>Editorial JSON</strong>: This setting defines the list of editors who contributed to the conference. It is represented as a JSON array of objects in the format: <code>{first_name, last_name, affiliation}</code>. This information is used to populate the "editors" field in the DOI metadata. E.g.:</p>
+</li>
+</ul>
+<p><code>[
+    {
+      "first_name": "OC",
+      "last_name": "Chair",
+      "affiliation": "JACoW"
+    },
+    {
+      "first_name": "SPC",
+      "last_name": "Chair",
+      "affiliation": "JACoW"
+    }
+  ]</code></p>
+<ul>
+<li>
+<p><strong>Custom field for contribution duplicates</strong>: This option allows you to specify the actual name of the <code>CAT_duplicate_of</code> field. <code>CAT_duplicate_of</code> is a custom field in Indico that can be used to indicate that one contribution has a "parent" contribution, sharing information such as references and DOIs with it. Here follows an example where contribution <code>SUPM014</code> has a custom field <code>CAT_duplicate_of</code> equal to <code>THPL082</code>:
+  <img alt="" src="../pictures/duplicate_of.png" /></p>
+</li>
+<li>
+<p><strong>Custom field for contributions not to publish</strong>: This option allows you to specify the actual name of the <code>CAT_publish</code> field. <code>CAT_publish</code> is a custom field in Indico that can be used to control whether a contribution can be published or not, based on the value of this field (if <code>false</code> that contribution won't appear in the proceedings). It is sufficient to be set as a boolean custom field with only the "False" value.</p>
+</li>
+</ul>
+<h3 id="identifiers">Identifiers</h3>
+<p><img alt="Final proceedings settings: Identifiers section" src="../pictures/settings-identifiers.png" /></p>
+<p>This section is used to define the <strong>ISBN</strong> and <strong>ISSN</strong> of the conference.</p>
+<h3 id="doi">DOI</h3>
+<p><img alt="Final proceedings settings: DOI section" src="../pictures/settings-DOI.png" /></p>
+<p>This section includes settings for DOI:</p>
+<ul>
+<li><strong>DOI API ENV</strong>: Used to switch between <em>Test</em> and <em>Production</em>.</li>
+</ul>
+<p>The following picture describes how some of these settings are used to compose the DOI URL:</p>
+<p><img alt="Final proceedings settings: Example of DOI URL" src="../pictures/doi-url-example.png" /></p>
+<p>Finally, <strong>DOI User</strong> and <strong>DOI Password</strong> are the credentials to access datacite.org's APIs.</p>
+<h3 id="materials">Materials</h3>
+<p><img alt="Final proceedings settings: Materials section" src="../pictures/settings-materials.png" /></p>
+<p>This section manages various assets related to the proceedings, such as logos, posters, covers of the at-a-glance volume, covers of the final proceedings volume, other volumes, and custom attachments. It is organised as a grouped table. For <em>volumes</em> and <em>attachments</em>, you can sort the files to have them listed in the desired order on the proceedings website.</p>
+<p>The files are sourced from the event's materials in Indico. To add a material to the proceedings, simply click on the 'Add' button. This will open a new modal where you can select the desired material and section, as illustrated in the following image.</p>
+<p><img alt="Final proceedings settings: Add material" src="../pictures/settings-materials-add.png" /></p>
+<hr />
+<p><strong>Important note</strong>: the files that can go into the proceedings are set via the above window in PURR's settings. However, they must be uploaded beforehand as conference materials in Indico (<em>Organisation &gt; Materials</em> menu entry in management interface). To let these files be reachable by PURR, be sure that you create a folder called <code>final_proceedings</code>. This folder can (and should) be protected and hidden from the general public.</p>
+<p><img alt="" src="../pictures/settings-materials-indico.png" /></p>
+<p><img alt="" src="../pictures/settings-materials-indico-details.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">File types</p>
+<p>Please note that the <code>Logo</code> and the <code>Poster</code> attachment must be images (preferrably in <code>PNG</code> format). All other files <strong>must be PDF</strong>.</p>
+</div>
+<h3 id="table-of-contents">Table of Contents</h3>
+<p><img alt="Final proceedings settings: Table of Contents section" src="../pictures/settings-toc.png" /></p>
+<p>This section covers the table of contents in the proceedings volume. You can include both sessions and contributions, or choose to include only one of them. It is recommended to include only sessions for conferences with a large number of contributions. This helps to keep the table of contents concise.</p>
+<p>Example of a Table of Contents created with both Sessions and Contributions:</p>
+<p><img alt="" src="../pictures/toc.png" /></p>
+<h2 id="visual-example-of-settings-result">Visual example of settings' result</h2>
+<p>The following picture shows the home page of a proceedings package with the values of the settings highlighted and explained.</p>
+<p><img alt="Final proceedings settings: Showcase of some of the settings in the homepage" src="../pictures/home-with-graphics.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
+      
+        <script src="../../assets/external/unpkg.com/mermaid@10.7.0/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
