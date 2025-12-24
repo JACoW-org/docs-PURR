@@ -4,17 +4,21 @@ When PURR successfully connects to a MEOW remote instance, it is displayed as "c
 
 There will be three available buttons:
 
+- Show MEOW info/cleanup space
 - Manage Settings
-- Clear MEOW Folders
 - Disconnect
+
+### Show MEOW info/cleanup space
+
+This functionality shows how much space is occupied and available on the MEOW server. It is also possible to delete all the conference's folders in the MEOW instance. A confirmation prompt is shown before continuing. Perform this task only if strictly necessary, as it will remove the folders for every user working on this conference's final proceedings.
 
 ### Manage Settings
 
 This functionality covers settings management. Clicking on it opens a modal with an accordion containing three sections:
 
-  - [Abstract Booklet](abstractBooklet.md)
-  - [PDF Check](papersCheck.md)
-  - [Final Proceedings](finalProceedings.md)
+- [Abstract Booklet](abstractBooklet.md)
+- [PDF Check](papersCheck.md)
+- [Final Proceedings](finalProceedings.md)
 
 ![Settings modal](pictures/settings-modal.png)
 
@@ -23,10 +27,6 @@ Each section covers the specific settings of each main functionality. To learn m
 ![Incomplete settings](pictures/settings-incomplete.png)
 
 To save the settings, click the "Save" button. If all the required settings are provided, the modal will be closed; otherwise, an error message is displayed.
-
-### Clear MEOW Folders
-
-This functionality deletes all the conference's folders in the MEOW instance. A confirmation prompt is shown before continuing. Perform this task only if strictly necessary, as it will remove the folders for every user working on this conference's final proceedings.
 
 ### Disconnect
 

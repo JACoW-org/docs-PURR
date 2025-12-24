@@ -13,7 +13,7 @@ Both the 'Pre-Press' and 'Final Proceedings' buttons are related to the generati
 In fact, 'Pre-Press' involves:
 
 - Including contributions that have been accepted (green state) but have not undergone QA.
-- Excluding contribution slides, if any.
+- Excluding contribution slides and posters, if any.
 - Performing a PDF check that will log warnings without halting the task execution.
 - Skipping the generation of DOI payloads.
 - The link to each contribution's DOI page is internal and not on [DOI.org](https://doi.org).
@@ -22,7 +22,7 @@ In fact, 'Pre-Press' involves:
 On the other hand, 'Final Proceedings' involves:
 
 - Including ONLY contributions that have been accepted (green state) and have undergone QA.
-- Including contribution slides when available.
+- Including contribution slides and posters when available and QA'd OK.
 - Performing a PDF check that will log errors on the panel without halting the task execution.
 - Generating JSON payloads for each contribution's DOI.
 - The link to each contribution's DOI page is on [DOI.org](https://doi.org).
@@ -63,21 +63,33 @@ The "DOI" button is enabled only if the DOI payload files have been generated pr
 
 ![DOI open](pictures/doi-open.png)
 
+Following is the list of available actions:
+
+- **Login**: checks that CAT can correctly login (and, hence, operate) on Datacite.org. The progress bar colour differs from the various states of this check:
+  
+    - **Blue**: login status not checked yet.
+  
+    - **Green**: login successful, it is possible to manage DOIs.
+  
+    - **Red**: login unsuccessful: please review the DOI settings (see below).
+
+- **Refresh**: forces a refresh of the list above by querying Datacite.org.
+
+- **Create**: updates the status of the DOIs to "draft" (this action doesn't work if DOIs have already been published or registered).
+
+- **Delete**: deletes the DOIs from the datacite repository (this action doesn't work if DOIs have already been published or registered).
+
+- **Publish**: updates the status of the DOIs to "findable."
+
+- **Hide**: updates the status of the DOIs to "hidden" (this action changes the DOIs to "registered" if they have already been published once).
+
 As a result, the status of every DOI is listed:
 
 ![DOI successfull fetch](pictures/doi-fetch.png)
 
-Following is the list of available actions:
-
-- **Refresh**: fetches the status of the DOIs again.
-- **Create**: updates the status of the DOIs to "draft" (this action doesn't work if DOIs have already been published or registered).
-- **Delete**: deletes the DOIs from the datacite repository (this action doesn't work if DOIs have already been published or registered).
-- **Publish**: updates the status of the DOIs to "findable."
-- **Hide**: updates the status of the DOIs to "hidden" (this action changes the DOIs to "registered" if they have already been published once).
-
 ## Settings
 
-Settings for final proceedings are organized into several subsections.
+Settings for final proceedings are organised into several subsections.
 
 ### General
 
@@ -142,6 +154,9 @@ This section encompasses the following configuration options:
 
 This section is used to define the **ISBN** and **ISSN** of the conference.
 
+!!! Info "Note for proceedings without ISSN"
+    Not all conferences are assigned an ISSN number. To avoid any printing of non-existing ISSN numbers on the proceedings website and on papers, enter the special nuber `0000-0000`. Doing so CAT won't generate any text related to ISSN numbers.
+
 ### DOI
 
 ![Final proceedings settings: DOI section](pictures/settings-DOI.png)
@@ -168,7 +183,8 @@ The files are sourced from the event's materials in Indico. To add a material to
 
 ---
 
-**Important note**: the files that can go into the proceedings are set via the above window in PURR's settings. However, they must be uploaded beforehand as conference materials in Indico (*Organisation > Materials* menu entry in management interface). To let these files be reachable by PURR, be sure that you create a folder called `final_proceedings`. This folder can (and should) be protected and hidden from the general public.
+!!! Warning "Important note" 
+    The files that can go into the proceedings are set via the above window in PURR's settings. However, they must be uploaded beforehand as conference materials in Indico (*Organisation > Materials* menu entry in management interface). To let these files be reachable by PURR, be sure that you create a folder called `final_proceedings`. This folder can (and should) be protected and hidden from the general public.
 
 ![](pictures/settings-materials-indico.png)
 
